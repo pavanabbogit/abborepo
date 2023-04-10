@@ -1,0 +1,41 @@
+Non-functional requirements (NFRs) are the quality attributes that specify how the system should behave, rather than what the system should do. Here are some examples of NFRs for a REST API:
+
+Performance: The REST API should respond quickly to requests, with low latency and high throughput, to support a large number of concurrent users and minimize user wait times.
+
+Scalability: The REST API should be able to handle increasing loads of traffic and data without a significant degradation of performance or loss of functionality.
+
+Availability: The REST API should be highly available, with minimal downtime or maintenance windows, to ensure that users can access the system at all times.
+
+Reliability: The REST API should be reliable, with minimal errors, crashes, or unexpected behaviors, to ensure that users can trust the system and its results.
+
+Security: The REST API should be secure, with authentication, authorization, and encryption mechanisms in place to protect against unauthorized access, data breaches, or attacks.
+
+Compliance: The REST API should comply with relevant laws, regulations, and industry standards, such as data privacy laws or security standards, to ensure that the system is legal and ethical.
+
+Usability: The REST API should be easy to use, with clear documentation, error messages, and feedback mechanisms, to ensure that users can interact with the system effectively and efficiently.
+
+Maintainability: The REST API should be maintainable, with clean code, good architecture, and clear separation of concerns, to ensure that the system can be modified or updated without introducing new bugs or unintended consequences.
+
+Interoperability: The REST API should be interoperable, with standard protocols, formats, and interfaces, to ensure that the system can communicate and integrate with other systems or services effectively.
+
+Extensibility: The REST API should be extensible, with a modular design and clear APIs, to ensure that the system can be extended or customized to meet changing requirements or user needs.
+
+These NFRs are important to consider when designing and developing a REST API, as they can affect the overall performance, user satisfaction, and success of the system.
+
+
+
+Django provides several built-in authorization methods that can be used to secure REST APIs. Here are some of the most common authorization methods in Django:
+
+Basic Authentication: This is the simplest authentication method that uses a username and password to authenticate requests. It is easy to implement and works well for simple use cases.
+
+Token Authentication: Token authentication is a stateless authentication method that uses a token to authenticate requests. The token can be passed in the request header or as a query parameter. This method is useful for mobile and single-page applications that need to authenticate requests from the client-side.
+
+Session Authentication: This authentication method uses Django's built-in session framework to authenticate requests. It is useful for web applications that need to maintain user sessions.
+
+OAuth2 Authentication: This is a more complex authentication method that allows users to grant third-party applications access to their resources without sharing their credentials. It is commonly used in social media applications and requires additional configuration.
+
+Permissions: Django provides a robust permissions system that can be used to restrict access to resources. Permissions can be assigned to users or groups and can be used in conjunction with authentication methods.
+
+Throttling: Throttling is a method of limiting the number of requests that can be made to an API within a certain time frame. It is useful for preventing abuse and controlling resource usage.
+
+These are just a few of the authorization methods that can be used in Django REST APIs. The choice of method depends on the specific use case and security requirements.
